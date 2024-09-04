@@ -35,9 +35,9 @@ const Navbar = () => {
             </button>
           </div>
           <ul
-            className={`transition-transform duration-900 md:border-0  border-t-2 ease-in-out transform bg-gray-800 overflow-hidden z-50 ${
+            className={`transition-transform duration-900 md:border-0 border-t-2 ease-in-out transform bg-gray-800 overflow-hidden z-50 ${
               isOpen
-                ? "flex flex-col absolute top-20 w-full left-0 right-0 pb-6 text-center ease-in"
+                ? "flex flex-col absolute top-20 w-full left-0 right-0 py-6 text-center ease-in"
                 : "hidden"
             } sm:flex sm:space-x-4 text-lg`}
           >
