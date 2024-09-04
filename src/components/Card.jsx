@@ -50,7 +50,7 @@ const Card = ({ student, isGrid, onClick }) => {
       </div>
 
       <div className="flex px-[3px] pr-[6px] py-2 md:flex-col space-x-1 items-baseline md:justify-around justify-evenly rounded-tl-3xl bg-gray-800">
-        <div className="p-1 rounded-md transition transform hover:scale-110 hover:bg-black hover:shadow-lg cursor-pointer">
+        <div className="p-1 rounded-md transition transform hover:scale-110  hover:shadow-lg cursor-pointer">
           <img
             src="./assets/images/edit-icon.svg"
             width={20}
@@ -59,7 +59,7 @@ const Card = ({ student, isGrid, onClick }) => {
           />
         </div>
 
-        <div className="p-1 rounded-md transition transform hover:scale-110 hover:bg-black hover:shadow-lg cursor-pointer">
+        <div className="p-1 rounded-md transition transform hover:scale-110  hover:shadow-lg cursor-pointer">
           <img
             src="./assets/images/delete-icon.svg"
             width={25}
@@ -68,7 +68,7 @@ const Card = ({ student, isGrid, onClick }) => {
           />
         </div>
 
-        <div className="p-1 rounded-md transition transform hover:scale-110 hover:bg-black hover:shadow-lg cursor-pointer">
+        <div className="p-1 rounded-md transition transform hover:scale-110  hover:shadow-lg cursor-pointer">
           <img
             src="./assets/images/flag-icon.svg"
             width={25}
