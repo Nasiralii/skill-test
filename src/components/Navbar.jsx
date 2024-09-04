@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-800 text-white shadow-md">
+    <nav className="bg-black text-white shadow-md">
       <div className="container mx-auto px-2 sm:px-6 lg:px-8">
         <div className="flex-1 flex items-center justify-between py-8">
           <div className="flex-shrink-0">
@@ -28,36 +29,36 @@ const Navbar = () => {
             </button>
           </div>
           <div
-            className={`transition-transform transform bg-gray-800 text-gray-300 overflow-hidden z-50 ${
+            className={`transition-transform duration-900 ease-in-out transform bg-black overflow-hidden z-50 ${
               isOpen
                 ? "flex flex-col absolute top-16 w-full left-0 right-0 pb-6 text-center ease-in"
                 : "hidden"
             } sm:flex sm:space-x-4 text-lg`}
           >
-            <a
-              href="/"
-              className="hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md"
+            <Link
+              to="/"
+              className="text-base cursor-pointer md:w-auto w-fit md:mx-auto mx-auto hover-underline-animation  px-3 py-2 rounded-md"
             >
               Home
-            </a>
-            <a
-              href="/"
-              className="hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md"
+            </Link>
+            <Link
+              to="/about"
+              className="text-base cursor-pointer md:w-auto w-fit md:mx-auto mx-auto hover-underline-animation px-3 py-2 rounded-md"
             >
               About
-            </a>
-            <a
-              href="/"
-              className="hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md"
+            </Link>
+            <Link
+              to="/service"
+              className="text-base cursor-pointer md:w-auto w-fit md:mx-auto mx-auto hover-underline-animation px-3 py-2 rounded-md"
             >
               Service
-            </a>
-            <a
-              href="/"
-              className="hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md"
+            </Link>
+            <Link
+              to="/contact"
+              className="text-base cursor-pointer md:w-auto w-fit md:mx-auto mx-auto hover-underline-animation px-3 py-2 rounded-md"
             >
               Contact
-            </a>
+            </Link>
           </div>
         </div>
       </div>

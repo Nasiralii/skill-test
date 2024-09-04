@@ -3,19 +3,19 @@ import React from "react";
 const Card = ({ student, isGrid, onClick }) => {
   return (
     <div
-      onClick={onClick}
-      className={`shadow border flex flex-row justify-between transform transition-transform duration-500 ease-in-out cursor-pointer ${
-        isGrid ? "hover:scale-105" : ""
+      className={`shadow border container mx-auto flex md:flex-row flex-col justify-between transform transition-transform duration-500 ease-in-out cursor-pointer ${
+        isGrid && "hover:scale-105"
       }`}
     >
       <div
+        onClick={onClick}
         className={`${
           isGrid
             ? "bg-white p-4 cursor-pointer"
             : "p-4 flex flex-row justify-between items-center"
         }`}
       >
-        <div className="text-gray-600">
+        <div className="text-black">
           <h2 className={"text-xl font-bold"}>
             <div className="flex flex-row gap-3 items-center">
               <img
@@ -49,8 +49,8 @@ const Card = ({ student, isGrid, onClick }) => {
         </div>
       </div>
 
-      <div className="flex px-1 py-2 flex-col space-x-1 items-baseline justify-around rounded-tl-3xl bg-gray-500">
-        <div className="p-1 rounded-md transition transform hover:scale-110 hover:bg-gray-100 hover:shadow-lg cursor-pointer">
+      <div className="flex px-1 py-2 md:flex-col space-x-1 items-baseline md:justify-around justify-evenly rounded-tl-3xl bg-black">
+        <div className="p-1 rounded-md transition transform hover:scale-110 hover:bg-gray-500 hover:shadow-lg cursor-pointer">
           <img
             src="./assets/images/edit-icon.svg"
             width={20}
@@ -59,7 +59,7 @@ const Card = ({ student, isGrid, onClick }) => {
           />
         </div>
 
-        <div className="p-1 rounded-md transition transform hover:scale-110 hover:bg-gray-100 hover:shadow-lg cursor-pointer">
+        <div className="p-1 rounded-md transition transform hover:scale-110 hover:bg-gray-500 hover:shadow-lg cursor-pointer">
           <img
             src="./assets/images/delete-icon.svg"
             width={20}
@@ -68,7 +68,7 @@ const Card = ({ student, isGrid, onClick }) => {
           />
         </div>
 
-        <div className="p-1 rounded-md transition transform hover:scale-110 hover:bg-gray-100 hover:shadow-lg cursor-pointer">
+        <div className="p-1 rounded-md transition transform hover:scale-110 hover:bg-gray-500 hover:shadow-lg cursor-pointer">
           <img
             src="./assets/images/flag-icon.svg"
             width={20}
