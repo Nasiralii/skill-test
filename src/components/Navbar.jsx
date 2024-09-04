@@ -8,12 +8,18 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
     <nav className="bg-gray-800 text-white shadow-md">
       <div className="container mx-auto px-2 sm:px-6 lg:px-8">
         <div className="flex-1 flex items-center justify-between py-8">
           <div className="flex-shrink-0">
-            <h1 className="text-xl font-bold">Skill Test</h1>
+            <Link to="/">
+              <h1 className="text-xl font-bold">Skill Test</h1>
+            </Link>
           </div>
           <div className="flex sm:hidden">
             <button type="button" onClick={toggleMenu}>
@@ -29,9 +35,9 @@ const Navbar = () => {
             </button>
           </div>
           <ul
-            className={`transition-transform duration-900 ease-in-out transform overflow-hidden z-50 ${
+            className={`transition-transform duration-900 md:border-0  border-t-2 ease-in-out transform bg-gray-800 overflow-hidden z-50 ${
               isOpen
-                ? "flex flex-col absolute top-16 w-full left-0 right-0 pb-6 text-center ease-in"
+                ? "flex flex-col absolute top-20 w-full left-0 right-0 pb-6 text-center ease-in"
                 : "hidden"
             } sm:flex sm:space-x-4 text-lg`}
           >
@@ -39,6 +45,7 @@ const Navbar = () => {
               <Link
                 to="/"
                 className="hover-underline-animation px-3 py-2 rounded-md"
+                onClick={closeMenu}
               >
                 Home
               </Link>
@@ -47,6 +54,7 @@ const Navbar = () => {
               <Link
                 to="/about"
                 className="hover-underline-animation px-3 py-2 rounded-md"
+                onClick={closeMenu}
               >
                 About
               </Link>
@@ -55,6 +63,7 @@ const Navbar = () => {
               <Link
                 to="/contact"
                 className="hover-underline-animation px-3 py-2 rounded-md"
+                onClick={closeMenu}
               >
                 Contact
               </Link>
@@ -63,6 +72,7 @@ const Navbar = () => {
               <Link
                 to="/service"
                 className="hover-underline-animation px-3 py-2 rounded-md"
+                onClick={closeMenu}
               >
                 Service
               </Link>
