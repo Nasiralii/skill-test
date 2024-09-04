@@ -15,7 +15,7 @@ const Card = ({ student, isGrid, onClick }) => {
             : "flex flex-row justify-between items-center"
         }`}
       >
-        <div className="text-black">
+        <div className="text-black flex flex-col gap-2">
           <h2 className={"text-xl font-bold"}>
             <div className="flex flex-row gap-3 items-center">
               <img

@@ -39,8 +39,8 @@ const StudentView = () => {
           onClick={() => setViewState(true)}
           className={`p-3 rounded-l-md transition duration-300 ease-in-out transform ${
             viewState
-              ? "bg-gray-500 text-white shadow-lg"
-              : "bg-gray-200 scale-100"
+              ? "bg-gray-800 text-white shadow-lg"
+              : "bg-gray-300 scale-100"
           }`}
         >
           <img src="./assets/images/grid-icon.svg" alt="grid" />
@@ -49,8 +49,8 @@ const StudentView = () => {
           onClick={() => setViewState(false)}
           className={`p-3 transition rounded-r-md duration-300 ease-in-out transform ${
             !viewState
-              ? "bg-gray-500 text-white shadow-lg"
-              : "bg-gray-200 scale-100"
+              ? "bg-gray-800 text-white shadow-lg"
+              : "bg-gray-300 scale-100"
           }`}
         >
           <img src="./assets/images/list-icon.svg" alt="list" />
@@ -58,7 +58,7 @@ const StudentView = () => {
       </div>
       {loading ? (
         <div className="flex justify-center items-center h-64">
-          <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-500"></div>
+          <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-gray-800"></div>
         </div>
       ) : (
         <div

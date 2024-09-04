@@ -5,7 +5,7 @@ const StudentDetailPopup = ({ student, onClose }) => {
 
   return (
     <div className="fixed inset-0 flex items-center overflow-hidden justify-center bg-black bg-opacity-50">
-      <div className="bg-white p-6 md:m-0 m-2 rounded-lg shadow-lg relative max-w-lg w-full">
+      <div className="bg-white flex flex-col gap-1 p-8 md:m-0 m-2 rounded-lg shadow-lg relative max-w-lg w-full">
         <button
           onClick={onClose}
           className="absolute top-2 right-2 text-gray-500 hover:text-gray-800"
