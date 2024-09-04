@@ -9,7 +9,7 @@ const Card = ({ student, isGrid, onClick }) => {
     >
       <div
         onClick={onClick}
-        className={`w-full  p-4 ${
+        className={`w-full p-4 ${
           isGrid
             ? "bg-white cursor-pointer"
             : "flex flex-row justify-between items-center"
