@@ -28,38 +28,46 @@ const Navbar = () => {
               />
             </button>
           </div>
-          <div
+          <ul
             className={`transition-transform duration-900 ease-in-out transform bg-black overflow-hidden z-50 ${
               isOpen
                 ? "flex flex-col absolute top-16 w-full left-0 right-0 pb-6 text-center ease-in"
                 : "hidden"
             } sm:flex sm:space-x-4 text-lg`}
           >
-            <Link
-              to="/"
-              className="text-base cursor-pointer md:w-auto w-fit md:mx-auto mx-auto hover-underline-animation  px-3 py-2 rounded-md"
-            >
-              Home
-            </Link>
-            <Link
-              to="/about"
-              className="text-base cursor-pointer md:w-auto w-fit md:mx-auto mx-auto hover-underline-animation px-3 py-2 rounded-md"
-            >
-              About
-            </Link>
-            <Link
-              to="/service"
-              className="text-base cursor-pointer md:w-auto w-fit md:mx-auto mx-auto hover-underline-animation px-3 py-2 rounded-md"
-            >
-              Service
-            </Link>
-            <Link
-              to="/contact"
-              className="text-base cursor-pointer md:w-auto w-fit md:mx-auto mx-auto hover-underline-animation px-3 py-2 rounded-md"
-            >
-              Contact
-            </Link>
-          </div>
+            <li className="text-base cursor-pointer md:w-auto w-fit md:mx-auto mx-auto">
+              <Link
+                to="/"
+                className="hover-underline-animation px-3 py-2 rounded-md"
+              >
+                Home
+              </Link>
+            </li>
+            <li className="text-base cursor-pointer md:w-auto w-fit md:mx-auto mx-auto">
+              <Link
+                to="/about"
+                className="hover-underline-animation px-3 py-2 rounded-md"
+              >
+                About
+              </Link>
+            </li>
+            <li className="text-base cursor-pointer md:w-auto w-fit md:mx-auto mx-auto">
+              <Link
+                to="/contact"
+                className="hover-underline-animation px-3 py-2 rounded-md"
+              >
+                Contact
+              </Link>
+            </li>
+            <li className="text-base cursor-pointer md:w-auto w-fit md:mx-auto mx-auto">
+              <Link
+                to="/service"
+                className="hover-underline-animation px-3 py-2 rounded-md"
+              >
+                Service
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>

@@ -30,7 +30,7 @@ const StudentView = () => {
     setSelectedStudent(null);
   };
   return (
-    <div className="container mx-auto md:px-4 px-2 md:py-8 py-4">
+    <div className="container mx-auto md:px-4 px-2 md:py-5 py-4">
       <div className="mb-4 flex justify-end w-fit ml-auto items-center">
         <p className="md:text-right text-start font-bold mx-2">
           Total Students: {students.length}
