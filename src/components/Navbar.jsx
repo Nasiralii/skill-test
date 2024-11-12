@@ -15,10 +15,15 @@ const Navbar = () => {
   return (
     <nav className="bg-purple-800 text-white shadow-md overflow-hidden">
       <div className="container mx-auto px-2 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between py-8">
+        <div className="flex items-center justify-between md:py-8 py-4">
           <div className="flex-shrink-0">
             <Link to="/">
-              <h1 className="text-2xl font-bold">Skill Test</h1>
+              <img
+                src={`./assets/images/logo.jpg`}
+                width={60}
+                height={60}
+                className="rounded-full"
+              />
             </Link>
           </div>
           <div className="flex sm:hidden">
@@ -27,8 +32,8 @@ const Navbar = () => {
                 src={`./assets/images/${
                   isOpen ? "close-menu" : "open-menu"
                 }.svg`}
-                width={20}
-                height={20}
+                width={30}
+                height={30}
                 alt={isOpen ? "close menu" : "open menu"}
                 className="transition-opacity duration-300 ease-in-out"
               />
@@ -80,7 +85,7 @@ const Navbar = () => {
         ></div>
       )}
       <div
-        className={`fixed top-0 right-0 h-full w-1/2  bg-black text-white z-50 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 right-0 h-full w-2/3  bg-purple-600 text-white z-50 transform transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "translate-x-full"
         } sm:hidden`}
       >
@@ -91,8 +96,8 @@ const Navbar = () => {
           <img
             src="./assets/images/close-menu.svg"
             alt="close menu"
-            width={24}
-            height={24}
+            width={28}
+            height={28}
           />
         </button>
         <ul className="flex flex-col items-center mt-20 space-y-6 text-lg">

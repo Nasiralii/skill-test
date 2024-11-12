@@ -526,7 +526,7 @@ const ProfileDashboard = () => {
   };
 
   return (
-    <div className="min-h-screen p-8">
+    <div className="min-h-screen md:p-8 p-4">
       <div class="flex flex-row align-items-center md:justify-between py-6 flex-wrap gap-3 justify-end">
         <div className="relative w-full max-w-lg">
           <input
