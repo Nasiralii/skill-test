@@ -80,7 +80,7 @@ const ProfileCard = ({ profile, onView, onDelete, onFlag, isGrid }) => (
           alt={profile.name}
           className="w-24 h-24 rounded-full mb-4 object-cover"
         />
-        <div className={`mb-4 ${isGrid ? "hidden" : "block"}`}>
+        <div className={`mb-4`}>
           <StarRating rating={profile.rating} />
         </div>
       </div>
