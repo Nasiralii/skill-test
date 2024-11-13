@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <nav className="bg-purple-800 text-white shadow-md overflow-hidden">
       <div className="container mx-auto px-2 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between md:py-8 py-4">
+        <div className="flex items-center justify-between md:py-6 py-4">
           <div className="flex-shrink-0">
             <Link to="/">
               <img
