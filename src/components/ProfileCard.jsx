@@ -1,6 +1,6 @@
 import StarRating from "./StartRating";
 
-const ProfileCard = ({ profile, onView, onDelete, onFlag, isGrid }) => (
+const ProfileCard = ({ profile, onView, isGrid }) => (
   <div
     className={`profileCard bg-gradient-to-t from-white via-white to-purple-600 rounded-3xl shadow-lg ${
       isGrid === false ? "p-3" : "p-6 hover:scale-105"
@@ -202,4 +202,4 @@ const ProfileCard = ({ profile, onView, onDelete, onFlag, isGrid }) => (
     </div>
   </div>
 );
-export default ProfileCard
+export default ProfileCard;

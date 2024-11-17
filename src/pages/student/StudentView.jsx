@@ -134,20 +134,6 @@ const ProfileDashboard = () => {
     setIsModalOpen(true);
   };
 
-  const handleDelete = (profileId) => {
-    setProfiles(profiles.filter((profile) => profile.id !== profileId));
-  };
-
-  const handleFlag = (profileId) => {
-    setProfiles(
-      profiles.map((profile) =>
-        profile.id === profileId
-          ? { ...profile, flagged: !profile.flagged }
-          : profile
-      )
-    );
-  };
-
   return (
     <div className="min-h-screen md:p-8 p-4">
       <div class="flex flex-row align-items-center md:justify-between py-6 flex-wrap gap-3 justify-end">
@@ -209,8 +195,6 @@ const ProfileDashboard = () => {
             isGrid={viewState}
             profile={profile}
             onView={handleView}
-            onDelete={() => handleDelete(profile.id)}
-            onFlag={() => handleFlag(profile.id)}
           />
         ))}
       </div>
